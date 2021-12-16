@@ -1,0 +1,154 @@
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans',sans-serif;
+}
+
+.wrapper {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+.logo a {
+    font-size: 50px;
+    font-weight: bold;
+    float: left;
+    font-family: Courier; 
+    color: #B4846C;
+}
+
+.menu {
+    float: right;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: #DDDDDD;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li a{
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.kolom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.kolom .deskripsi {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'comic sans-ms';
+}
+#slider {
+    width: 950px;
+    height: 500px;
+    overflow: hidden;
+    border: 1px solid #c69;
+  }
+  
+  .slide {
+    width: 500px;
+    height: 500px;
+    float: left;
+    position: relative;
+  }
+  
+  #slide-holder {
+    width: 400%;
+    position: relative;
+    left: 0;
+    -webkit-animation: scroller 10s infinite;
+            animation: scroller 10s infinite;
+  }
+  
+  @-webkit-keyframes scroller {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    33% {
+      -webkit-transform: translateX(-400px);
+              transform: translateX(-400px);
+    }
+    66% {
+      -webkit-transform: translateX(-800px);
+              transform: translateX(-800px);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  
+  @keyframes scroller {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    33% {
+      -webkit-transform: translateX(-400px);
+              transform: translateX(-400px);
+    }
+    66% {
+      -webkit-transform: translateX(-800px);
+              transform: translateX(-800px);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  body {
+    font-family: sans-serif;
+  }
+  
+  #slider {
+    margin: 0 auto;
+  }
+  
+  .slide:nth-child(1) {
+    background: #c69;
+  }
+  
+  .slide:nth-child(2) {
+    background: wheat;
+  }
+  
+  .slide:nth-child(3) {
+    background: #eee;
+  }
